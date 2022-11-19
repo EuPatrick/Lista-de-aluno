@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const students = [
+        
+            {
+                name: "Patrick",
+                firstNota: 10,
+                secondNota: 4,
+            },
+            
+            {
+                name: "Joao",
+                firstNota: 10,
+                secondNota: 4,
+            },
+        
+            {
+                name: "Calebe",
+                firstNota: 6,
+                secondNota: 4,
+            },
+        
+            {
+                name: "Miguel",
+                firstNota: 9,
+                secondNota: 2,
+            },
+        ]
+        
+        let studentsApproveds = [];
+        
+        for (let candidate of students)
+        {
+            let media = ( candidate.firstNota + candidate.secondNota) / 2;
+        
+        if (media >=7) {
+            alert(`Parabens ${candidate.name} vocé foi aprovado sua media  é ${media.toFixed(2)}`)
+        }else {
+            alert(`A media do(a) aluno(a) ${candidate.name} é: ${media.toFixed(2)} Nao foi dessa vez ${candidate.name} será necessario fazer a recuperação`)
+        }
+        
+        }
+        </Script>
+</body>
+</html>
